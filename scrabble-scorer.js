@@ -61,7 +61,7 @@ function vowelBonusScore(word) {
   if (vowels.includes(word[i])){
     scoreTotal +=3;
   } else {
-    scoreTotal ++;
+    scoreTotal += 1;
   }
   }
   return scoreTotal
