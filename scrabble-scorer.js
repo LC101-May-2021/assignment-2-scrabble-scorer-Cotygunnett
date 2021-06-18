@@ -13,7 +13,7 @@ const oldPointStructure = {
 
 let word = '';
 let scoreSystem = 5;
-let scoreTotal = 0;
+
 let newPointStructure = transform(oldPointStructure);
 
 function oldScrabbleScorer(word) {
@@ -54,7 +54,7 @@ function simpleScore(word) {
 };
 
 function vowelBonusScore(word) {
-  
+  let scoreTotal = 0;
   word = word.toLowerCase();
   let vowels = ['a', 'e', 'i', 'o', 'u'];
   for (i = 0; i < word.length; i++){
@@ -69,7 +69,7 @@ function vowelBonusScore(word) {
 ;
 
 let scrabbleScore = function(word){
-  	
+  	let scoreTotal = 0;
  	word = word.toLowerCase();
 
 	for (let i = 0; i < word.length; i++) {
