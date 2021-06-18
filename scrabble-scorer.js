@@ -46,7 +46,7 @@ return word;
  
 };
 
-console.log(newPointStructure)
+
 
 
 function simpleScore(word) {
@@ -54,9 +54,9 @@ function simpleScore(word) {
 };
 
 function vowelBonusScore(word) {
-  console.log('something')
-  word = word.toUpperCase();
-  let vowels = ['A', 'E', 'I', 'O', 'U'];
+  
+  word = word.toLowerCase();
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
   for (i = 0; i < word.length; i++){
   if (vowels.includes(word[i])){
     scoreTotal +=3;
